@@ -1,0 +1,279 @@
+/**
+ * Author：tantingting
+ * Time：2018/6/26
+ * Description：Description
+ */
+@import "../../../libs/scss/rem";
+
+.page4 {
+    height: 1000px;
+    background: repeating-linear-gradient(to top, #272c2d, #191b1d 40%, #040505 100%);
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+
+    .page4-structure {
+        background: url("../../img/index/1920-page4-structure.png") no-repeat;
+        width: 609px;
+        height: 847px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+
+        .desc {
+            position: absolute;
+            font-family: 'fzlttx';
+
+            h4 {
+                font-size: 34px;
+                margin-bottom: 26px;
+            }
+
+            p {
+                font-size: 18px;
+                color: #d7e5ed;
+                line-height: 32px;
+            }
+        }
+
+        .line {
+            position: absolute;
+            height: 1px;
+            background-color: #fff;
+            left: 0;
+        }
+
+        .left {
+            position: absolute;
+
+            &.left-mkf {
+                top: 72px;
+                left: -45px;
+
+                .desc {
+                    width: 326px;
+                    left: -324px;
+                }
+
+                .line {
+                    width: 225px;
+                    top: 14px;
+                }
+            }
+
+            &.left-360yz {
+                top: 575px;
+                left: -88px;
+
+                .desc {
+                    width: 365px;
+                    left: -288px;
+                }
+
+                .line {
+                    width: 215px;
+                    left: 0;
+                    top: 145px;
+                }
+            }
+        }
+
+        .right {
+            position: absolute;
+
+            &.right-dsp {
+                top: 105px;
+                right: 230px;
+
+                .desc {
+                    width: 345px;
+                    left: 240px;
+                }
+
+                .line {
+                    width: 232px;
+                    left: 0;
+                    top: 80px;
+                }
+            }
+
+            &.right-525ysq {
+                top: 528px;
+                right: 210px;
+
+                .desc {
+                    width: 375px;
+                    left: 220px;
+                }
+
+                .line {
+                    width: 218px;
+                    left: 0;
+                    top: 18px;
+                }
+            }
+        }
+    }
+
+    .music-wave {
+        margin-left: (-1500/2) + px;
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        height: 210px;
+        width: 1500px;
+        z-index: 1;
+
+        span {
+            position: absolute;
+            left: 0;
+            top: 0;
+            border: 1px solid #989b9c;
+            border-radius: 50%;
+            display: block;
+            height: 210px;
+            width: 1500px;
+            opacity: 1;
+            transform: scale(1);
+            transform-origin: 50% 50%;
+            transition: all 2s ease 0s;
+
+            &:nth-child(1) {
+                animation: wave 6s ease infinite 0s both;
+            }
+
+            &:nth-child(2) {
+                animation: wave 6s ease infinite 1.5s both;
+            }
+
+            &:nth-child(3) {
+                animation: wave 6s ease infinite 3s both;
+            }
+
+            &:nth-child(4) {
+                animation: wave 6s ease infinite 4.5s both;
+            }
+        }
+
+        @keyframes wave {
+            0% {
+                opacity: 1;
+                transform: scale(0);
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .page4 {
+        height: rem(515);
+        //background: #040505;
+        background: linear-gradient(#040505, #191b1d, #272c2d);
+        //background: repeating-linear-gradient(to top, #272c2d, #191b1d 20%, #000 100%);
+        margin-top: rem(-2);
+
+        .page4-structure {
+            background: url("../../img/index/960-page4-structure.png") no-repeat;
+            background-size: contain;
+            width: rem(315);
+            //height: rem(438);
+
+            .desc {
+                h4 {
+                    font-size: rem(20);
+                    margin-bottom: rem(18);
+                }
+
+                p {
+                    font-size: rem(13);
+                    line-height: rem(24);
+                }
+            }
+
+            .left {
+                &.left-mkf {
+                    top: rem(38);
+                    left: rem(30);
+
+                    .desc {
+                        width: rem(180);
+                        left: rem(-178);
+                    }
+
+                    .line {
+                        width: rem(62);
+                        top: rem(8);
+                    }
+                }
+
+                &.left-360yz {
+                    top: rem(250);
+                    left: rem(-14);
+
+                    .desc {
+                        width: rem(122);
+                        left: rem(-128);
+                    }
+
+                    .line {
+                        width: rem(70);
+                        top: rem(120);
+                    }
+                }
+            }
+
+            .right {
+                &.right-dsp {
+                    top: rem(50);
+                    right: rem(120);
+
+                    .desc {
+                        width: rem(140);
+                        left: rem(136);
+                    }
+
+                    .line {
+                        width: rem(126);
+                        top: rem(48);
+                    }
+                }
+
+                &.right-525ysq {
+                    top: rem(260);
+                    right: rem(110);
+
+                    .desc {
+                        width: rem(135);
+                        left: rem(116);
+                    }
+
+                    .line {
+                        width: rem(100);
+                        top: 12px;
+                    }
+                }
+            }
+        }
+
+        .music-wave {
+            margin-left: rem(-1000/2);
+            bottom: rem(30);
+            height: rem(140);
+            width: rem(1000);
+
+            span {
+                height: rem(140);
+                width: rem(1000);
+            }
+        }
+    }
+}

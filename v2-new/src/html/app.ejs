@@ -1,0 +1,50 @@
+<%- include('../../libs/html/header', {
+title: 'APP下载',
+description: 'APP下载',
+keywords: 'APP下载',
+plugin: [],
+private: ['../css/public.css', '../css/app.css']
+}) %>
+<%- include('./public/buy') %>
+<%- include('./public/nav', {
+current: 'app',
+label: 'App下载'
+}) %>
+
+<div class="main app">
+    <div class="content">
+        <div class="frame"></div>
+        <div class="downLoad">
+            <p class="official">小青AI</p>
+            <p class="custom">下载APP，体验更多可能</p>
+            <div class="qrCode">
+                <img src="../img/app/codeImg.png" alt="" class="codeImg">
+            </div>
+            <div class="type lDownload">
+                <p class="iosButton" data-type="ios">
+                    <i class="iconfont iosSign">&#xe603;</i>
+                    <span class="ios">iPhone 版</span>
+                </p>
+                <p class="androidButton" data-type="android">
+                    <i class="iconfont">&#xe6c0;</i>
+                    <span class="ios">Android 版</span>
+                </p>
+            </div>
+        </div>
+        <div class="forPhone">
+            <p class="logo"></p>
+            <span class="line"></span>
+            <p class="desc">下载APP，体验更多可能</p>
+            <a class="downButton sDownload" href="javascript:void(0)">立即下载</a>
+        </div>
+    </div>
+</div>
+
+<%- include('./public/footer', {
+current: 'app'
+}) %>
+<%- include('../../libs/html/footer', {
+plugin: [],
+private: ['../js/public.js', '../js/app.js'],
+statistics: ''
+}) %>

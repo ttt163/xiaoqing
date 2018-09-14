@@ -1,0 +1,20 @@
+<%- include('../../libs/html/header', {
+title: '联系我们',
+description: '联系我们',
+keywords: '联系我们',
+plugin: [],
+private: ['../css/public.css', '../css/platform-contact.css']
+}) %>
+<%- include('./public/plaform-header.ejs') %>
+<div class="page-contain">
+    <h1 class="platform-page-title">关于我们</h1>
+</div>
+<%- include('./contact/main') %>
+<%- include('./public/platform-footer.ejs', {
+current: 'footer'
+}) %>
+<%- include('../../libs/html/footer', {
+plugin: [],
+private: ['../js/public.js'],
+statistics: ''
+}) %>

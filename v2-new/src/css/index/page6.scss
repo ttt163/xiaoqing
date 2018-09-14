@@ -1,0 +1,65 @@
+/**
+ * Author：tantingting
+ * Time：2018/6/26
+ * Description：Description
+ */
+@import "../../../libs/scss/rem";
+
+.page6 {
+    background: url("../../img/index/1920-page6-bg.jpg") top center no-repeat;
+    background-size: 1920px 1162px;
+    height: 1162px;
+    padding-top: 970px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0;
+
+    h3 {
+        font-size: 60px;
+        color: #fff;
+    }
+
+    a {
+        display: inline-block;
+        color: #3ac8fd;
+        font-size: 28px;
+        vertical-align: middle;
+        margin-top: 35px;
+
+        &:after {
+            content: '';
+            display: inline-block;
+            background: url("../../img/index/1920-play.png") no-repeat;
+            width: 53px;
+            height: 53px;
+            vertical-align: middle;
+            margin-left: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .page6 {
+        background: url("../../img/index/960-page6-bg.jpg") top center no-repeat;
+        background-size: rem(640) rem(766);
+        height: rem(766);
+        padding-top: rem(648);
+
+        h3 {
+            font-size: rem(42);
+        }
+
+        a {
+            font-size: rem(20);
+            margin-top: rem(20);
+
+            &:after {
+                content: '';
+                background: url("../../img/index/960-play.png") no-repeat;
+                background-size: contain;
+                width: rem(29);
+                height: rem(29);
+            }
+        }
+    }
+}

@@ -1,0 +1,384 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017-08-29 19:30
+ * Description：index
+ */
+@import "../../libs/scss/rem";
+
+@media screen and (min-width: 641px) {
+    body {
+        min-width: 1320px;
+    }
+}
+
+.size-warp {
+    color: #545454;
+    font-size: 20px;
+    //background-color: #f2f2f2;
+
+    .size-contain {
+        width: 1227px;
+        margin: 20px auto 0;
+        box-sizing: border-box;
+
+        h2 {
+            font-size: 48px;
+            padding-top: 50px;
+        }
+
+        & > div {
+            border: 1px solid #fbfbfb;
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 35px 0 35px 55px;
+            font-size: 0;
+
+            h2 {
+                //margin: 35px 0;
+                padding-right: 48px;
+                border-right: 1px solid #e2e2e2;
+                width: 145px;
+                font-family: 'fzlttx';
+                display: inline-block;
+                vertical-align: middle;
+                box-sizing: border-box;
+            }
+
+            .page-right {
+                font-size: 20px;
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 115px;
+                box-sizing: border-box;
+
+                .row {
+                    font-size: 0;
+                    margin-bottom: 15px;
+
+                    & > div {
+                        display: inline-block;
+                        font-size: 20px;
+
+                        &.col-right {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+
+            &.size-page1 {
+                h2 {
+                    height: 506px;
+                }
+
+                .page-right {
+                    height: 506px;
+
+                    .img-box {
+                        margin-left: 10px;
+                        margin-top: 60px;
+
+                        & > div {
+                            float: left;
+                            text-align: center;
+                            margin-right: 80px;
+
+                            span {
+                                margin-top: 25px;
+                                display: block;
+                            }
+
+                            .img-red {
+                                background: url("../img/size/1920-xq-red.png") no-repeat;
+                                background-size: contain;
+                                width: 203px;
+                                height: 330px;
+                            }
+
+                            .img-white {
+                                background: url("../img/size/1920-xq-white.png") no-repeat;
+                                background-size: contain;
+                                width: 203px;
+                                height: 329px;
+                            }
+
+                            .img-blue {
+                                background: url("../img/size/1920-xq-blue.png") no-repeat;
+                                background-size: contain;
+                                width: 202px;
+                                height: 331px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.size-page2 {
+                h2 {
+                    height: 504px;
+                }
+
+                .page-right {
+                    position: relative;
+                    height: 504px;
+                    padding-top: 40px;
+
+                    .size-img {
+                        background: url("../img/size/1920-xq-size.jpg") no-repeat;
+                        width: 588px;
+                        height: 407px;
+                    }
+
+                    .size-info {
+                        position: absolute;
+                        bottom: 40px;
+                        right: -160px;
+
+                        .row {
+                            .col-right {
+                                span {
+                                    display: inline-block;
+                                    width: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.size-page3 {
+                h2 {
+                    height: 416px;
+                }
+
+                .page-right {
+                    padding-top: 50px;
+
+                    .size-info {
+                        .row {
+                            margin-bottom: 50px;
+
+                            .col-left {
+                                width: 172px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.size-page4 {
+                h2 {
+                    height: 488px;
+                }
+
+                .page-right {
+                    //height: 416px;
+                    padding-top: 50px;
+
+                    .size-info {
+                        .row {
+                            margin-bottom: 50px;
+
+                            .col-left {
+                                width: 172px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.size-page5 {
+                h2 {
+                    height: 272px;
+                }
+
+                .page-right {
+                    padding-top: 50px;
+
+                    p {
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .size-warp {
+        font-size: rem(16);
+
+        .size-contain {
+            width: rem(616);
+            margin: rem(20) auto;
+
+            h2 {
+                font-size: rem(28);
+                padding-top: rem(24);
+            }
+
+            & > div {
+                margin-bottom: rem(9);
+                padding: rem(15) 0 rem(15) rem(22);
+
+                h2 {
+                    padding-right: rem(22);
+                    width: rem(80);
+                }
+
+                .page-right {
+                    font-size: rem(16);
+                    padding-left: rem(58);
+
+                    .row {
+                        margin-bottom: rem(8);
+
+                        & > div {
+                            font-size: rem(16);
+
+                            &.col-right {
+                                margin-left: rem(10);
+                            }
+                        }
+                    }
+                }
+
+                &.size-page1 {
+                    h2 {
+                        height: rem(255);
+                    }
+
+                    .page-right {
+                        height: rem(255);
+
+                        .img-box {
+                            margin-left: rem(5);
+                            margin-top: rem(28);
+
+                            & > div {
+                                margin-right: rem(40);
+
+                                span {
+                                    margin-top: rem(16);
+                                }
+
+                                .img-red {
+                                    background: url("../img/size/960-xq-red.png") no-repeat;
+                                    background-size: contain;
+                                    width: rem(102);
+                                    height: rem(165);
+                                }
+
+                                .img-white {
+                                    background: url("../img/size/960-xq-white.png") no-repeat;
+                                    background-size: contain;
+                                    width: rem(102);
+                                    height: rem(165);
+                                }
+
+                                .img-blue {
+                                    background: url("../img/size/960-xq-blue.png") no-repeat;
+                                    background-size: contain;
+                                    width: rem(102);
+                                    height: rem(167);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.size-page2 {
+                    h2 {
+                        height: rem(256);
+                    }
+
+                    .page-right {
+                        height: rem(256);
+                        padding-top: rem(22);
+
+                        .size-img {
+                            background: url("../img/size/960-xq-size.jpg") no-repeat;
+                            background-size: contain;
+                            width: rem(297);
+                            //height: rem(205);
+                        }
+
+                        .size-info {
+                            bottom: rem(-10);
+                            right: rem(-80);
+
+                            .row {
+                                .col-left {
+                                    vertical-align: top;
+                                }
+
+                                .col-right {
+                                    vertical-align: top;
+
+                                    span {
+                                        display: block;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.size-page3 {
+                    h2 {
+                        height: rem(210);
+                    }
+
+                    .page-right {
+                        padding-top: rem(24);
+
+                        .size-info {
+                            .row {
+                                margin-bottom: rem(22);
+
+                                .col-left {
+                                    width: rem(112);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.size-page4 {
+                    h2 {
+                        height: rem(246);
+                    }
+
+                    .page-right {
+                        padding-top: rem(24);
+
+                        .size-info {
+                            .row {
+                                margin-bottom: rem(22);
+
+                                .col-left {
+                                    width: rem(88);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.size-page5 {
+                    h2 {
+                        height: rem(134);
+                    }
+
+                    .page-right {
+                        padding-top: rem(20);
+
+                        p {
+                            margin-bottom: rem(20);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

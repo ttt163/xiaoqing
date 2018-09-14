@@ -1,0 +1,52 @@
+<%
+ const navData = [
+     {name: 'index', label: '概述', path: './index.html'},
+     {name: 'atlas', label: '图集', path: './atlas.html'},
+     {name: 'size', label: '参数', path: './size.html'},
+     {name: 'app', label: 'APP下载', path: './app.html'},
+     {name: 'store', label: '零售体验店', path: './store.html'},
+     {name: 'WeChat', label: '微信公众号', path: 'javascript:void(0)'},
+     {name: 'platform', label: '小青智趣平台', path: './fun.html'}
+ ]
+ %>
+<div class="xq-top clearfix">
+    <div class="top clearfix">
+        <a href="./index.html" class="t-left"></a>
+        <div class="t-right">
+            <a class="active" href="./index.html">小青AI音箱</a>
+            <a target="_blank" href="./fun.html">小青智趣平台</a>
+        </div>
+        <a class="xq-nav-btn" href="javascript:void(0)">
+            <div class="line"></div>
+        </a>
+    </div>
+    <div class="nav-box clearfix <%= current === 'footer' ? 'left' : '' %>">
+        <h1 class="page-title"><%= !label ? '' : label %></h1>
+        <nav class="mask clearfix">
+            <div class="close"><span id="xqNavClose"><img src="../../img/svg/close.svg"></span></div>
+            <ul>
+                <%
+                navData.map((item) => {
+                if (item.name === 'WeChat') {%>
+                <li  class="xq-WeChat <%= current === item.name ? 'active' : '' %>">
+                    <a href="<%= item.path %>"><%= item.label %></a>
+                    <div class="gzh-ewm">
+                        <div class="sj"></div>
+                        <div class="gzh-ewm-box">
+                            <img src="../../img/gzh-ewm.jpg">
+                            <span>扫一扫关注公众号</span>
+                        </div>
+                    </div>
+                </li>
+                <%} else if (item.name === 'platform') {%>
+                <li class="xq-platform <%= current === item.name ? 'active' : '' %>"><a href="<%= item.path %>"><%= item.label %></a></li>
+                <%} else {%>
+                <li class="<%= current === item.name ? 'active' : '' %>"><a href="<%= item.path %>"><%= item.label %></a></li>
+                <%}
+                })
+                %>
+            </ul>
+        </nav>
+        <a class="buy-now" href="">立即购买</a>
+    </div>
+</div>

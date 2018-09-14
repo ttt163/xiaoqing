@@ -1,0 +1,44 @@
+/**
+ * Author：tantingting
+ * Time：2018/3/9
+ * Description：Description
+ */
+@import '../../../libs/scss/rem';
+
+@media screen and (max-width: 640px) {
+    .fixed-xcx-ewm {
+        position: absolute;
+        top: rem(804);
+        left: 0;
+        color: #fff;
+        font-size: rem(18);
+        text-align: center;
+        padding-left: rem(30);
+        //display: none;
+
+        img {
+            width: rem(150);
+            height: rem(150);
+            margin-bottom: rem(10);
+        }
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .fixed-xcx-ewm {
+        position: absolute;
+        top: 930px;
+        left: 20px;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        padding-left: 10px;
+        display: none;
+
+        img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/**
+ * Author：zhoushuanglong
+ * Time：2017-08-29 19:30
+ * Description：index
+ */
+/* mobile width 640px rem caculate, 24/640 */
+@media screen and (min-width: 641px) {
+  body {
+    min-width: 1227px; } }
+
+.devices-warp {
+  color: #545454;
+  font-size: 20px; }
+  .devices-warp .devices-contain {
+    width: 1227px;
+    margin: 30px auto 50px; }
+    .devices-warp .devices-contain .d-top {
+      background: url("../img/devices/1920-sb-bj.jpg") no-repeat;
+      background-size: contain;
+      width: 1227px;
+      height: 400px;
+      position: relative;
+      margin-bottom: 30px; }
+      .devices-warp .devices-contain .d-top h1 {
+        font-size: 48px;
+        position: absolute;
+        top: 180px;
+        left: 128px; }
+    .devices-warp .devices-contain .d-main > div {
+      float: left;
+      width: 375px;
+      margin-right: 51px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      .devices-warp .devices-contain .d-main > div:nth-last-of-type(1) {
+        margin-right: 0; }
+      .devices-warp .devices-contain .d-main > div .d-box {
+        font-size: 20px;
+        padding: 35px 0 18px 60px;
+        background-color: #fff;
+        color: #545454;
+        margin-bottom: 24px; }
+        .devices-warp .devices-contain .d-main > div .d-box h3 {
+          font-size: 40px;
+          margin-bottom: 55px; }
+        .devices-warp .devices-contain .d-main > div .d-box p {
+          margin-bottom: 18px; }
+      .devices-warp .devices-contain .d-main > div .d-more-box {
+        font-size: 30px;
+        text-align: center;
+        height: 280px;
+        line-height: 280px;
+        background-color: #fff;
+        color: #545454; }
+
+@media screen and (max-width: 640px) {
+  .devices-warp {
+    font-size: 0.66667rem; }
+    .devices-warp .devices-contain {
+      width: 25rem;
+      margin: 0.83333rem auto 1.04167rem; }
+      .devices-warp .devices-contain .d-top {
+        background: url("../img/devices/960-sb-bj.jpg") no-repeat;
+        background-size: contain;
+        width: 25rem;
+        height: 12.08333rem;
+        margin-bottom: 0.91667rem; }
+        .devices-warp .devices-contain .d-top h1 {
+          font-size: 1.33333rem;
+          position: absolute;
+          top: 5.41667rem;
+          left: 1.33333rem; }
+      .devices-warp .devices-contain .d-main > div {
+        float: left;
+        width: 12rem;
+        margin-right: 1rem; }
+        .devices-warp .devices-contain .d-main > div:nth-last-of-type(2), .devices-warp .devices-contain .d-main > div:nth-last-of-type(1) {
+          margin-right: 0; }
+        .devices-warp .devices-contain .d-main > div .d-box {
+          font-size: 0.66667rem;
+          padding: 1.16667rem 0 0.5rem 1.58333rem;
+          margin-bottom: 0.75rem; }
+          .devices-warp .devices-contain .d-main > div .d-box h3 {
+            font-size: 1.29167rem;
+            margin-bottom: 1.66667rem; }
+          .devices-warp .devices-contain .d-main > div .d-box p {
+            margin-bottom: 0.66667rem; }
+        .devices-warp .devices-contain .d-main > div .d-more-box {
+          font-size: 0.95833rem;
+          height: 9.08333rem;
+          line-height: 9.08333rem; }
+        .devices-warp .devices-contain .d-main > div:nth-last-of-type(1) {
+          clear: both;
+          width: 25rem; }
+          .devices-warp .devices-contain .d-main > div:nth-last-of-type(1) .left-960 {
+            float: left;
+            width: 12rem;
+            margin-right: 1rem; }
+          .devices-warp .devices-contain .d-main > div:nth-last-of-type(1) .right-960 {
+            float: left;
+            width: 12rem; } }
+
+/*# sourceMappingURL=devices.css.map */
+
+/*# sourceMappingURL=devices.css.map */

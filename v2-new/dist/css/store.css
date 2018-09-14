@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/**
+ * Author：zhoushuanglong
+ * Time：2017-08-29 19:30
+ * Description：index
+ */
+/* mobile width 640px rem caculate, 24/640 */
+@media screen and (min-width: 641px) {
+  body {
+    min-width: 1320px; } }
+
+.store-warp .store-contain {
+  width: 1227px;
+  margin: 20px auto 0;
+  color: #545454;
+  font-size: 20px; }
+  .store-warp .store-contain .c-box {
+    background-color: #fff;
+    margin-bottom: 20px; }
+    .store-warp .store-contain .c-box .img-bg {
+      float: right;
+      width: 528px;
+      height: 460px; }
+    .store-warp .store-contain .c-box:nth-of-type(1) .img-bg {
+      background: url("../img/store/1920-img-jqsd-szjc.jpg") no-repeat; }
+    .store-warp .store-contain .c-box:nth-of-type(2) .img-bg {
+      background: url("../img/store/1920-img-jqsd-zhuoyue.jpg") no-repeat; }
+    .store-warp .store-contain .c-box:nth-of-type(3) .img-bg {
+      background: url("../img/store/1920-img-jqsd-xiamen.jpg") no-repeat; }
+    .store-warp .store-contain .c-box:nth-of-type(4) .img-bg {
+      background: url("../img/store/1920-img-4.jpg") no-repeat; }
+    .store-warp .store-contain .c-box:nth-of-type(5) .img-bg {
+      background: url("../img/store/1920-img-5.jpg") no-repeat; }
+    .store-warp .store-contain .c-box:nth-of-type(6) .img-bg {
+      background: url("../img/store/1920-img-6.jpg") no-repeat; }
+    .store-warp .store-contain .c-box:nth-of-type(7) .img-bg {
+      background: url("../img/store/1920-img-7.jpg") no-repeat; }
+    .store-warp .store-contain .c-box .info {
+      float: left;
+      margin-left: 62px;
+      margin-top: 110px; }
+      .store-warp .store-contain .c-box .info h2 {
+        font-size: 40px;
+        margin-bottom: 65px;
+        font-family: 'fzlttx'; }
+      .store-warp .store-contain .c-box .info p {
+        margin-bottom: 55px;
+        line-height: 35px; }
+        .store-warp .store-contain .c-box .info p:nth-last-of-type(1) {
+          margin-bottom: 0; }
+
+@media screen and (max-width: 640px) {
+  .store-warp .store-contain {
+    width: 25.875rem;
+    margin: 0.75rem auto 0;
+    font-size: 0.83333rem; }
+    .store-warp .store-contain .c-box {
+      margin-bottom: 0.625rem; }
+      .store-warp .store-contain .c-box .img-bg {
+        float: none;
+        width: 25.875rem;
+        height: 11.04167rem; }
+      .store-warp .store-contain .c-box:nth-of-type(1) .img-bg {
+        background: url("../img/store/960-img-jqsd-szjc.jpg") no-repeat;
+        background-size: contain; }
+      .store-warp .store-contain .c-box:nth-of-type(2) .img-bg {
+        background: url("../img/store/960-img-jqsd-zhuoyue.jpg") no-repeat;
+        background-size: contain; }
+      .store-warp .store-contain .c-box:nth-of-type(3) .img-bg {
+        background: url("../img/store/960-img-jqsd-xiamen.jpg") no-repeat;
+        background-size: contain; }
+      .store-warp .store-contain .c-box:nth-of-type(4) .img-bg {
+        background: url("../img/store/960-img-4.jpg") no-repeat;
+        background-size: contain; }
+      .store-warp .store-contain .c-box:nth-of-type(5) .img-bg {
+        background: url("../img/store/960-img-5.jpg") no-repeat;
+        background-size: contain; }
+      .store-warp .store-contain .c-box:nth-of-type(6) .img-bg {
+        background: url("../img/store/960-img-6.jpg") no-repeat;
+        background-size: contain; }
+      .store-warp .store-contain .c-box:nth-of-type(7) .img-bg {
+        background: url("../img/store/960-img-7.jpg") no-repeat;
+        background-size: contain; }
+      .store-warp .store-contain .c-box .info {
+        float: none;
+        margin: 0;
+        padding: 2.83333rem 0 2.83333rem 2.33333rem; }
+        .store-warp .store-contain .c-box .info h2 {
+          font-size: 1.29167rem;
+          margin-bottom: 1.75rem; }
+        .store-warp .store-contain .c-box .info p {
+          margin-bottom: 2.08333rem;
+          line-height: 1.58333rem; }
+          .store-warp .store-contain .c-box .info p:nth-last-of-type(1) {
+            margin-bottom: 0; } }
+
+/*# sourceMappingURL=store.css.map */
+
+/*# sourceMappingURL=store.css.map */

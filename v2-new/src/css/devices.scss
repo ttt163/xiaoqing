@@ -1,0 +1,153 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017-08-29 19:30
+ * Description：index
+ */
+@import "../../libs/scss/rem";
+
+@media screen and (min-width: 641px) {
+    body {
+        min-width: 1227px;
+    }
+}
+
+.devices-warp {
+    color: #545454;
+    font-size: 20px;
+
+    .devices-contain {
+        width: 1227px;
+        margin: 30px auto 50px;
+
+        .d-top {
+            background: url("../img/devices/1920-sb-bj.jpg") no-repeat;
+            background-size: contain;
+            width: 1227px;
+            height: 400px;
+            position: relative;
+            margin-bottom: 30px;
+
+            h1 {
+                font-size: 48px;
+                position: absolute;
+                top: 180px;
+                left: 128px;
+            }
+        }
+
+        .d-main {
+            & > div {
+                float: left;
+                width: 375px;
+                margin-right: 51px;
+                box-sizing: border-box;
+
+                &:nth-last-of-type(1) {
+                    margin-right: 0;
+                }
+
+                .d-box {
+                    font-size: 20px;
+                    padding: 35px 0 18px 60px;
+                    background-color: #fff;
+                    color: #545454;
+                    margin-bottom: 24px;
+
+                    h3 {
+                        font-size: 40px;
+                        margin-bottom: 55px;
+                    }
+
+                    p {
+                        margin-bottom: 18px;
+                    }
+                }
+
+                .d-more-box {
+                    font-size: 30px;
+                    text-align: center;
+                    height: 280px;
+                    line-height: 280px;
+                    background-color: #fff;
+                    color: #545454;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .devices-warp {
+        font-size: rem(16);
+
+        .devices-contain {
+            width: rem(600);
+            margin: rem(20) auto rem(25);
+
+            .d-top {
+                background: url("../img/devices/960-sb-bj.jpg") no-repeat;
+                background-size: contain;
+                width: rem(600);
+                height: rem(290);
+                margin-bottom: rem(22);
+
+                h1 {
+                    font-size: rem(32);
+                    position: absolute;
+                    top: rem(130);
+                    left: rem(32);
+                }
+            }
+
+            .d-main {
+                & > div {
+                    float: left;
+                    width: rem(288);
+                    margin-right: rem(24);
+
+                    &:nth-last-of-type(2),
+                    &:nth-last-of-type(1) {
+                        margin-right: 0;
+                    }
+
+                    .d-box {
+                        font-size: rem(16);
+                        padding: rem(28) 0 rem(12) rem(38);
+                        margin-bottom: rem(18);
+
+                        h3 {
+                            font-size: rem(31);
+                            margin-bottom: rem(40);
+                        }
+
+                        p {
+                            margin-bottom: rem(16);
+                        }
+                    }
+
+                    .d-more-box {
+                        font-size: rem(23);
+                        height: rem(218);
+                        line-height: rem(218);
+                    }
+
+                    &:nth-last-of-type(1) {
+                        clear: both;
+                        width: rem(600);
+
+                        .left-960 {
+                            float: left;
+                            width: rem(288);
+                            margin-right: rem(24);
+                        }
+
+                        .right-960 {
+                            float: left;
+                            width: rem(288);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

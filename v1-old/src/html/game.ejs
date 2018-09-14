@@ -1,0 +1,36 @@
+<%- include('../../libs/html/header', {
+title: '小青AI音箱',
+description: '小青AI音箱',
+keywords: '小青AI音箱',
+plugin: ['http://common.8864.com/web/plugins/swiper/swiper.min.css'],
+private: ['../css/public.css', '../css/games.css']
+}) %>
+<%- include('./public/buy') %>
+<%- include('./public/nav', {
+current: 'game'
+}) %>
+
+<div class="main games">
+    <div class="content">
+        <div class="desc">
+            <p class="title">小青现已上线技能一览</p>
+            <h4 class="sub-title">先在技能商店启用相应技能</h4>
+            <p class="sign"></p>
+            <p class="tips">小青小青，打开百万富翁</p>
+            <p class="tips">小青小青，打开翻牌记忆</p>
+            <p class="tips">......</p>
+        </div>
+        <div class="games">
+            <ul class="items clearfix">
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<%- include('./public/footer') %>
+<%- include('../../libs/html/footer', {
+plugin: ['../js/swiper.min.js'],
+private: ['../js/game.js', '../js/public.js', '../js/index.js'],
+statistics: ''
+}) %>

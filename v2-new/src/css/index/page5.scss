@@ -1,0 +1,179 @@
+/**
+ * Author：tantingting
+ * Time：2018/6/26
+ * Description：Description
+ */
+@import "../../../libs/scss/rem";
+
+.page5 {
+    height: 1665px;
+    background: url("../../img/index/1920-page5-bg.jpg") #20468d top center no-repeat;
+    background-size: 1920px 910px;
+    color: #fff;
+    padding-top: 870px;
+    box-sizing: border-box;
+
+    .skill-warp {
+        font-family: 'fzlttx';
+        height: 165px;
+        overflow: hidden;
+        position: relative;
+
+        .skill-list {
+            transform: translateY(41);
+            transition: all 0.5s ease;
+
+            .skill-item {
+                opacity: 0.4;
+                text-align: center;
+                font-size: 32px;
+                height: 55px;
+                line-height: 55px;
+
+                &.curr {
+                    font-size: 42px;
+                    opacity: 0.8;
+                    //margin: 20px 0;
+                }
+
+                &.prev {
+                    font-size: 36px;
+                }
+
+                &.next {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+    .app-img {
+        background: url("../../img/index/1920-page5-yy.png") no-repeat;
+        width: 1270px;
+        height: 300px;
+        margin: 40px auto 0;
+    }
+
+    .content-list {
+        width: 1272px;
+        margin: 70px auto 0;
+        text-align: center;
+
+        .list-item {
+            float: left;
+            border-right: 1px solid #67b7f0;
+            padding-right: 40px;
+            margin-right: 45px;
+
+            &:nth-last-of-type(1) {
+                border-right: 0;
+                padding-right: 0;
+                margin-right: 0;
+            }
+
+            h6 {
+                color: #c6f1ff;
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 52px;
+                font-family: 'fzlttx';
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .page5 {
+        height: rem(1355);
+        background: url("../../img/index/960-page5-bg.jpg") #20468d top center no-repeat;
+        background-size: rem(640) rem(479);
+        padding-top: rem(450);
+
+        .skill-warp {
+            height: rem(130);
+
+            .skill-list {
+                transform: translateY(rem(-32));
+
+                .skill-item {
+                    font-size: rem(26);
+                    height: rem(43);
+                    line-height: rem(43);
+
+                    &.curr {
+                        font-size: rem(31);
+                        //margin: rem(20) 0;
+                    }
+
+                    &.prev {
+                        font-size: rem(26);
+                    }
+
+                    &.next {
+                        font-size: rem(26);
+                    }
+                }
+            }
+        }
+
+        .app-img {
+            background: url("../../img/index/960-page5-yy.png") no-repeat;
+            background-size: contain;
+            width: rem(481);
+            //height: rem(449);
+            margin: rem(25) auto 0;
+        }
+
+        .content-list {
+            width: rem(560);
+            margin: rem(35) auto 0;
+            padding-left: rem(38);
+
+            .bottom-list {
+                width: rem(430);
+                clear: both;
+                margin: 0 auto;
+
+                .list-item {
+                    margin-top: rem(30);
+                    padding-right: rem(60);
+                    margin-right: rem(45);
+                }
+
+                &:after {
+                    clear: both;
+                    display: block;
+                    content: '';
+                    overflow: hidden;
+                    width: 0;
+                    height: 0;
+                }
+            }
+
+            .list-item {
+                padding: 0 rem(26);
+                //padding-right: rem(10);
+                margin-right: 0;
+
+                &:nth-of-type(3),
+                &:nth-last-of-type(1) {
+                    border-right: 0;
+                    padding-right: 0;
+                    margin-right: 0;
+                }
+
+                h6 {
+                    font-size: rem(20);
+                    margin-bottom: rem(8);
+                }
+
+                p {
+                    font-size: rem(34);
+                }
+            }
+        }
+    }
+}

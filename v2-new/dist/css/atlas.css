@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/**
+ * Author：zhoushuanglong
+ * Time：2017-08-29 19:30
+ * Description：index
+ */
+/* mobile width 640px rem caculate, 24/640 */
+@media screen and (min-width: 641px) {
+  body {
+    min-width: 1320px; } }
+
+.atlas-warp .contain {
+  width: 1226px;
+  margin: 20px auto 0; }
+  .atlas-warp .contain .xq-img {
+    width: 603px;
+    height: 405px;
+    margin-bottom: 20px; }
+    .atlas-warp .contain .xq-img:nth-of-type(1), .atlas-warp .contain .xq-img:nth-of-type(4), .atlas-warp .contain .xq-img:nth-of-type(7) {
+      width: 1226px;
+      height: 824px;
+      clear: both; }
+    .atlas-warp .contain .xq-img:nth-of-type(2), .atlas-warp .contain .xq-img:nth-of-type(5), .atlas-warp .contain .xq-img:nth-of-type(8) {
+      float: left; }
+    .atlas-warp .contain .xq-img:nth-of-type(3), .atlas-warp .contain .xq-img:nth-of-type(6), .atlas-warp .contain .xq-img:nth-of-type(9) {
+      float: right; }
+    .atlas-warp .contain .xq-img:nth-of-type(1) {
+      background: url("../img/atlas/1920-img1.jpg") no-repeat; }
+    .atlas-warp .contain .xq-img:nth-of-type(2) {
+      background: url("../img/atlas/1920-img2.jpg") no-repeat; }
+    .atlas-warp .contain .xq-img:nth-of-type(3) {
+      background: url("../img/atlas/1920-img3.jpg") no-repeat; }
+    .atlas-warp .contain .xq-img:nth-of-type(4) {
+      background: url("../img/atlas/1920-img4.jpg") no-repeat; }
+    .atlas-warp .contain .xq-img:nth-of-type(5) {
+      background: url("../img/atlas/1920-img5.jpg") no-repeat; }
+    .atlas-warp .contain .xq-img:nth-of-type(6) {
+      background: url("../img/atlas/1920-img6.jpg") no-repeat; }
+    .atlas-warp .contain .xq-img:nth-of-type(7) {
+      background: url("../img/atlas/1920-img7.jpg") no-repeat; }
+    .atlas-warp .contain .xq-img:nth-of-type(8) {
+      background: url("../img/atlas/1920-img8.jpg") no-repeat; }
+    .atlas-warp .contain .xq-img:nth-of-type(9) {
+      background: url("../img/atlas/1920-img9.jpg") no-repeat; }
+
+@media screen and (max-width: 640px) {
+  .atlas-warp .contain {
+    width: 25.875rem;
+    margin: 0.83333rem auto 0.83333rem; }
+    .atlas-warp .contain .xq-img {
+      width: 25.875rem;
+      height: 17.375rem;
+      margin-bottom: 0.41667rem; }
+      .atlas-warp .contain .xq-img:nth-of-type(1), .atlas-warp .contain .xq-img:nth-of-type(4), .atlas-warp .contain .xq-img:nth-of-type(7) {
+        width: 25.875rem;
+        height: 17.375rem; }
+      .atlas-warp .contain .xq-img:nth-of-type(2), .atlas-warp .contain .xq-img:nth-of-type(5), .atlas-warp .contain .xq-img:nth-of-type(8) {
+        float: none; }
+      .atlas-warp .contain .xq-img:nth-of-type(3), .atlas-warp .contain .xq-img:nth-of-type(6), .atlas-warp .contain .xq-img:nth-of-type(9) {
+        float: none; }
+      .atlas-warp .contain .xq-img:nth-of-type(1) {
+        background: url("../img/atlas/640-img1.jpg") no-repeat;
+        background-size: contain; }
+      .atlas-warp .contain .xq-img:nth-of-type(2) {
+        background: url("../img/atlas/640-img2.jpg") no-repeat;
+        background-size: contain; }
+      .atlas-warp .contain .xq-img:nth-of-type(3) {
+        background: url("../img/atlas/640-img3.jpg") no-repeat;
+        background-size: contain; }
+      .atlas-warp .contain .xq-img:nth-of-type(4) {
+        background: url("../img/atlas/640-img4.jpg") no-repeat;
+        background-size: contain; }
+      .atlas-warp .contain .xq-img:nth-of-type(5) {
+        background: url("../img/atlas/1920-img5.jpg") no-repeat;
+        background-size: contain; }
+      .atlas-warp .contain .xq-img:nth-of-type(6) {
+        background: url("../img/atlas/640-img6.jpg") no-repeat;
+        background-size: contain; }
+      .atlas-warp .contain .xq-img:nth-of-type(7) {
+        background: url("../img/atlas/640-img7.jpg") no-repeat;
+        background-size: contain; }
+      .atlas-warp .contain .xq-img:nth-of-type(8) {
+        background: url("../img/atlas/640-img8.jpg") no-repeat;
+        background-size: contain; }
+      .atlas-warp .contain .xq-img:nth-of-type(9) {
+        background: url("../img/atlas/1920-img9.jpg") no-repeat;
+        background-size: contain; } }
+
+/*# sourceMappingURL=atlas.css.map */
+
+/*# sourceMappingURL=atlas.css.map */

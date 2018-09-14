@@ -1,0 +1,1271 @@
+@charset "UTF-8";
+/**
+ * Author：zhoushuanglong
+ * Time：2018-01-09 15:45
+ * Description：public
+ */
+/**
+ * Author：zhoushuanglong
+ * Time：2017-09-05 20:09
+ * Description：utils
+ */
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a, a:hover {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+/* style reset */
+table {
+  border-collapse: collapse; }
+
+td,
+th {
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+li {
+  list-style: none; }
+
+a, a:hover {
+  text-decoration: none;
+  cursor: pointer; }
+
+em,
+i {
+  font-style: normal; }
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+  content: "\20";
+  display: block;
+  height: 0;
+  overflow: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+/* statistics code hide */
+.website-statistics {
+  display: none; }
+
+/* mobile width 640px rem caculate, 24/640 */
+a.popup-close {
+  position: absolute;
+  right: -40px;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  height: 30px;
+  width: 30px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 32px;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none; }
+
+/* 统计代码 */
+.website-statistics {
+  display: none; }
+
+a[title='站长统计'] {
+  display: none; }
+
+/* 页面加载 */
+.lk-loading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  display: none \9;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s; }
+  .lk-loading.active {
+    opacity: 1; }
+  .lk-loading .lk-loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+  .lk-loading .lk-loading-center-absolute {
+    margin: -5px 0 0 -40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 10px;
+    width: 100px; }
+    .lk-loading .lk-loading-center-absolute .round {
+      float: left;
+      margin: 0 9.16667px;
+      background-color: #046ab6;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px; }
+    .lk-loading .lk-loading-center-absolute .round-one {
+      -webkit-animation: lk-loading-round 1.5s infinite;
+              animation: lk-loading-round 1.5s infinite; }
+    .lk-loading .lk-loading-center-absolute .round-two {
+      -webkit-animation: lk-loading-round 1.5s infinite;
+              animation: lk-loading-round 1.5s infinite;
+      -webkit-animation-delay: 0.25s;
+              animation-delay: 0.25s; }
+    .lk-loading .lk-loading-center-absolute .round-three {
+      -webkit-animation: lk-loading-round 1.5s infinite;
+              animation: lk-loading-round 1.5s infinite;
+      -webkit-animation-delay: 0.5s;
+              animation-delay: 0.5s; }
+
+@-webkit-keyframes lk-loading-round {
+  75% {
+    -webkit-transform: scale(0);
+            transform: scale(0); } }
+
+@keyframes lk-loading-round {
+  75% {
+    -webkit-transform: scale(0);
+            transform: scale(0); } }
+
+/* 浏览器提示 */
+.browser-tips-mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: url("../img/opacity-black-bg.png");
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: 9998; }
+
+.browser-tips {
+  margin-left: -300px;
+  position: fixed;
+  left: 50%;
+  top: 200px;
+  background: #fff;
+  display: block;
+  border-radius: 5px;
+  height: 450px;
+  width: 600px;
+  color: #454545;
+  z-index: 9999; }
+  .browser-tips a.browser-tips-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: url("../img/close-btn.png") no-repeat center;
+    height: 32px;
+    width: 32px;
+    cursor: pointer; }
+  .browser-tips h1 {
+    margin: 75px auto 50px;
+    display: block;
+    width: 460px;
+    color: #ba5750;
+    font-size: 36px;
+    text-align: center; }
+  .browser-tips h3 {
+    margin: 20px auto 0;
+    width: 460px;
+    color: #764b45;
+    font-size: 16px;
+    line-height: 46px; }
+  .browser-tips p {
+    margin: 50px auto 0;
+    width: 600px;
+    text-align: center; }
+    .browser-tips p a {
+      margin: 0 10px;
+      display: inline-block;
+      height: 51px;
+      width: 148px;
+      color: #b74c44;
+      font-size: 16px;
+      line-height: 51px;
+      text-align: center; }
+
+/* 游戏分页 */
+.paging-nav {
+  text-align: center; }
+  .paging-nav a {
+    display: inline-block;
+    text-align: center; }
+    .paging-nav a:hover, .paging-nav a.active {
+      color: #b74c44;
+      text-decoration: none; }
+
+.paging-list li {
+  clear: both; }
+
+.paging-list a {
+  float: left;
+  color: #000; }
+
+.paging-list time {
+  float: right; }
+
+.paging-btn {
+  text-align: center; }
+  .paging-btn a {
+    display: inline-block; }
+    .paging-btn a:hover, .paging-btn a.active {
+      font-weight: bold; }
+
+/* 视频播放 */
+.videoplay-mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9998; }
+
+.videoplay-wrap {
+  position: fixed;
+  top: 30%;
+  display: none;
+  z-index: 9999;
+  width: 650px;
+  height: 400px;
+  left: 50%;
+  margin-left: -325px; }
+  .videoplay-wrap video {
+    width: 650px;
+    height: 400px; }
+
+/* 图片弹出 */
+.img-pop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+  z-index: 9999; }
+  .img-pop .img-mask {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    z-index: 0; }
+  .img-pop .img-con-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1; }
+    .img-pop .img-con-wrap .img-con-scroll {
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+      overflow-y: auto; }
+      .img-pop .img-con-wrap .img-con-scroll::-webkit-scrollbar {
+        width: 3px;
+        height: 3px; }
+      .img-pop .img-con-wrap .img-con-scroll::-webkit-scrollbar-button {
+        background-color: #f0f0f0; }
+      .img-pop .img-con-wrap .img-con-scroll::-webkit-scrollbar-track {
+        background: #f0f0f0; }
+      .img-pop .img-con-wrap .img-con-scroll::-webkit-scrollbar-track-piece {
+        background: #f0f0f0; }
+      .img-pop .img-con-wrap .img-con-scroll::-webkit-scrollbar-thumb {
+        background: #bbb;
+        border-radius: 5px; }
+      .img-pop .img-con-wrap .img-con-scroll::-webkit-scrollbar-corner {
+        background: #f0f0f0; }
+    .img-pop .img-con-wrap img {
+      display: block;
+      width: 100%; }
+
+.page-mobile {
+  /* 微信下载提示 */
+  /* 视频播放 */
+  /* 图片弹出 */ }
+  .page-mobile a.popup-close {
+    right: 0.41667rem;
+    top: -2.08333rem;
+    height: 1.66667rem;
+    width: 1.66667rem;
+    font-size: 1.58333rem;
+    line-height: 1.5rem; }
+  .page-mobile .micromsg-tips {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    height: 100%;
+    width: 100%;
+    z-index: 9999; }
+  .page-mobile .micromsg-tips-text {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url("../img/weixinmsg-tips-text.png") no-repeat;
+    background-size: 100% auto;
+    height: 100%;
+    width: 100%; }
+  .page-mobile .videoplay-wrap {
+    margin-left: auto;
+    position: fixed;
+    left: 0;
+    top: 30%;
+    height: auto;
+    width: 100%; }
+    .page-mobile .videoplay-wrap video {
+      height: auto;
+      width: 100%; }
+  .page-mobile .img-pop .img-con-wrap {
+    left: 0;
+    top: 50%;
+    width: 100%; }
+    .page-mobile .img-pop .img-con-wrap .img-con-scroll {
+      height: 100%; }
+      .page-mobile .img-pop .img-con-wrap .img-con-scroll::-webkit-scrollbar {
+        width: 0;
+        height: 0; }
+      .page-mobile .img-pop .img-con-wrap .img-con-scroll::-webkit-scrollbar-thumb {
+        border-radius: 0; }
+
+/**
+ * Author：zhoushuanglong
+ * Time：2018-01-16 10:54
+ * Description：footer
+ */
+/* mobile width 640px rem caculate, 24/640 */
+.buy {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -200px 0 0 -200px;
+  width: 400px;
+  height: 400px;
+  background: #fafafa;
+  border-radius: 5px;
+  z-index: 1005;
+  display: none; }
+  .buy.show {
+    display: block; }
+  .buy .buy-con {
+    width: 100%;
+    margin-top: 50px; }
+    .buy .buy-con .title {
+      text-align: center;
+      font-size: 18px;
+      color: #37474f;
+      line-height: 50px; }
+    .buy .buy-con .price {
+      font-size: 20px;
+      color: #ef5350;
+      font-weight: bold;
+      text-align: center;
+      line-height: 70px; }
+      .buy .buy-con .price span {
+        font-size: 36px; }
+    .buy .buy-con .buy-ewm {
+      width: 170px;
+      height: 150px;
+      margin: 0 auto;
+      background: #f7f8fa;
+      border-radius: 5px; }
+      .buy .buy-con .buy-ewm p {
+        width: 170px;
+        height: 150px;
+        background: #fff;
+        border-radius: 5px;
+        margin: 0 auto; }
+        .buy .buy-con .buy-ewm p img {
+          display: block;
+          width: 150px;
+          height: 150px;
+          margin: 0 auto; }
+    .buy .buy-con .sys,
+    .buy .buy-con .sys-m {
+      width: 241px;
+      height: 54px;
+      margin: 40px auto 0;
+      display: none; }
+    .buy .buy-con .sys {
+      display: block; }
+
+.shade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1004;
+  background: rgba(0, 0, 0, 0.6);
+  display: none; }
+  .shade.show {
+    display: block; }
+
+@media screen and (max-width: 640px) {
+  .buy {
+    margin: -8.33333rem 0 0 -8.33333rem;
+    width: 16.66667rem;
+    height: 16.66667rem; }
+    .buy .buy-con {
+      width: 100%;
+      margin-top: 2.08333rem; }
+      .buy .buy-con .title {
+        font-size: 1rem;
+        color: #37474f;
+        line-height: 2.5rem; }
+      .buy .buy-con .price {
+        font-size: 0.83333rem;
+        color: #ef5350;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.875rem; }
+        .buy .buy-con .price span {
+          font-size: 1.5rem; }
+      .buy .buy-con .buy-ewm {
+        width: 7.08333rem;
+        height: 6.25rem; }
+        .buy .buy-con .buy-ewm p {
+          width: 6.66667rem;
+          height: 6.25rem;
+          border-radius: 0.20833rem; }
+          .buy .buy-con .buy-ewm p img {
+            display: block;
+            width: 6.25rem;
+            height: 6.25rem;
+            padding-top: 0.20833rem; }
+      .buy .buy-con .sys,
+      .buy .buy-con .sys-m {
+        width: 10.04167rem;
+        height: 2.25rem;
+        margin: 1.66667rem auto 0;
+        display: none; }
+        .buy .buy-con .sys img,
+        .buy .buy-con .sys-m img {
+          width: 10.04167rem;
+          height: 2.25rem; }
+      .buy .buy-con .sys-m {
+        display: block; } }
+
+/**
+ * Author：zhoushuanglong
+ * Time：2018-01-16 10:54
+ * Description：nav
+ */
+/* mobile width 640px rem caculate, 24/640 */
+.xq-top {
+  padding: 0 4.6875%;
+  background-color: #fff;
+  color: #545454; }
+  .xq-top .top .t-left {
+    width: 106px;
+    height: 113px;
+    background: url("../../img/xq-logo-1920.png") no-repeat;
+    float: left; }
+  .xq-top .top .t-right {
+    border-bottom: 1px solid #d9d9d9;
+    margin-left: 140px;
+    font-size: 0;
+    font-family: fzlttx; }
+    .xq-top .top .t-right a {
+      font-size: 24px;
+      color: #545454;
+      display: inline-block;
+      margin-right: 60px;
+      height: 112px;
+      line-height: 112px; }
+      .xq-top .top .t-right a.active {
+        color: #c20f2f;
+        position: relative; }
+        .xq-top .top .t-right a.active:after {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: -1px;
+          width: 100%;
+          height: 2px;
+          background-color: #c20f2f; }
+  .xq-top .top .xq-nav-btn {
+    display: none; }
+  .xq-top .nav-box {
+    float: right; }
+    .xq-top .nav-box .page-title {
+      display: none; }
+    .xq-top .nav-box.left {
+      float: left; }
+      .xq-top .nav-box.left .page-title {
+        display: block;
+        font-size: 40px;
+        line-height: 90px;
+        font-family: 'fzlttx'; }
+      .xq-top .nav-box.left nav {
+        display: none; }
+      .xq-top .nav-box.left .buy-now {
+        display: none; }
+    .xq-top .nav-box nav {
+      float: left;
+      font-family: fzlttx; }
+      .xq-top .nav-box nav ul {
+        font-size: 0;
+        padding: 34px 0; }
+        .xq-top .nav-box nav ul li {
+          display: inline-block;
+          border-right: 1px solid #d9d9d9;
+          margin-right: 20px;
+          padding-right: 20px; }
+          .xq-top .nav-box nav ul li.active a {
+            color: #c20f2f; }
+          .xq-top .nav-box nav ul li a {
+            color: #545454;
+            font-size: 20px; }
+          .xq-top .nav-box nav ul li.xq-WeChat {
+            border-right: 0;
+            margin-right: 10px;
+            position: relative; }
+            .xq-top .nav-box nav ul li.xq-WeChat .gzh-ewm {
+              display: none;
+              position: absolute;
+              z-index: 99;
+              top: 25px;
+              left: -46px;
+              color: #fff; }
+              .xq-top .nav-box nav ul li.xq-WeChat .gzh-ewm .sj {
+                border: 10px solid transparent;
+                border-bottom-color: #c20f2f;
+                width: 0;
+                margin-left: 90px; }
+              .xq-top .nav-box nav ul li.xq-WeChat .gzh-ewm .gzh-ewm-box {
+                background-color: #c20f2f;
+                padding: 18px 28px;
+                border-radius: 5px;
+                text-align: center; }
+                .xq-top .nav-box nav ul li.xq-WeChat .gzh-ewm .gzh-ewm-box span {
+                  display: block;
+                  font-size: 18px;
+                  white-space: nowrap;
+                  margin-top: 8px; }
+          .xq-top .nav-box nav ul li.xq-platform {
+            display: none; }
+      .xq-top .nav-box nav .close {
+        display: none; }
+    .xq-top .nav-box .buy-now {
+      float: right;
+      font-size: 20px;
+      color: #fff;
+      padding: 14px 28px;
+      background-color: #c20f2f;
+      display: block;
+      border-radius: 5px;
+      margin-top: 18px; }
+
+@media screen and (max-width: 640px) {
+  .xq-top {
+    padding: 0;
+    position: relative; }
+    .xq-top .top {
+      border-bottom: 1px solid #d9d9d9; }
+      .xq-top .top .t-left {
+        width: 4.75rem;
+        height: 4.33333rem;
+        background: url("../../img/xq-logo-640.png") no-repeat;
+        background-size: contain; }
+      .xq-top .top .t-right {
+        display: none; }
+      .xq-top .top .xq-nav-btn {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: 1.04167rem;
+        top: 2rem;
+        height: 2.25rem; }
+        .xq-top .top .xq-nav-btn .line,
+        .xq-top .top .xq-nav-btn .line:after,
+        .xq-top .top .xq-nav-btn .line:before {
+          display: block;
+          background: #a5a5a5;
+          border-radius: 0.83333rem;
+          height: 0.25rem;
+          width: 2.16667rem;
+          -webkit-transition: background 1s ease 0s;
+          transition: background 1s ease 0s; }
+        .xq-top .top .xq-nav-btn .line:after,
+        .xq-top .top .xq-nav-btn .line:before {
+          content: ''; }
+        .xq-top .top .xq-nav-btn .line:after {
+          -webkit-transform: translateY(0.75rem);
+              -ms-transform: translateY(0.75rem);
+                  transform: translateY(0.75rem); }
+        .xq-top .top .xq-nav-btn .line:before {
+          -webkit-transform: translateY(-0.75rem);
+              -ms-transform: translateY(-0.75rem);
+                  transform: translateY(-0.75rem); }
+    .xq-top .nav-box.left .page-title {
+      display: none; }
+    .xq-top .nav-box.left .buy-now {
+      display: block; }
+    .xq-top .nav-box nav.mask {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      display: none; }
+    .xq-top .nav-box nav ul {
+      margin-top: 6.25rem;
+      padding: 0 1.66667rem; }
+      .xq-top .nav-box nav ul li {
+        display: block;
+        border-right: 0;
+        margin-right: 0;
+        padding-right: 0;
+        border-bottom: 1px solid #d9d9d9;
+        margin-bottom: 1.875rem; }
+        .xq-top .nav-box nav ul li.active a {
+          color: #c20f2f; }
+        .xq-top .nav-box nav ul li a {
+          color: #d9d9d9;
+          font-size: 1.25rem;
+          display: block;
+          padding-bottom: 1.58333rem; }
+        .xq-top .nav-box nav ul li.xq-WeChat {
+          display: none; }
+        .xq-top .nav-box nav ul li.xq-platform {
+          display: block; }
+    .xq-top .nav-box nav .close {
+      display: block;
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem; }
+      .xq-top .nav-box nav .close img {
+        width: 1.58333rem; }
+    .xq-top .nav-box .buy-now {
+      position: absolute;
+      top: 0;
+      right: 4.5rem;
+      padding: 0.625rem 1.25rem;
+      font-size: 0.91667rem;
+      border-radius: 2.70833rem; } }
+
+/**
+ * Author：zhoushuanglong
+ * Time：2018-01-16 10:54
+ * Description：footer
+ */
+/* mobile width 640px rem caculate, 24/640 */
+footer {
+  background: #fff;
+  padding-top: 90px; }
+  footer .contact {
+    margin: 0 4.6875%; }
+    footer .contact .link {
+      float: left;
+      font-size: 0;
+      margin-top: 50px; }
+      footer .contact .link a {
+        font-size: 18px;
+        color: #37474f;
+        border-right: 1px solid #37474f;
+        margin-right: 30px;
+        padding-right: 30px;
+        display: inline-block; }
+        footer .contact .link a:nth-last-of-type(1) {
+          border-right: 0;
+          margin-right: 0;
+          padding-right: 0; }
+    footer .contact .ewm-box {
+      float: right;
+      font-size: 0; }
+      footer .contact .ewm-box > div {
+        display: inline-block;
+        text-align: center; }
+        footer .contact .ewm-box > div.wb-ewm-box {
+          margin-left: 50px; }
+        footer .contact .ewm-box > div > div {
+          width: 120px;
+          height: 120px; }
+        footer .contact .ewm-box > div .gzh-ewm-img {
+          background: url("../../img/footer/1920-ewm-xqgzh.jpg") center no-repeat; }
+        footer .contact .ewm-box > div .wb-ewm-img {
+          background: url("../../img/footer/1920-ewm-xqwb.jpg") center no-repeat; }
+        footer .contact .ewm-box > div .zqgzh-ewm-img {
+          background: url("../../img/footer/960-ewm-platform.jpg") center no-repeat;
+          background-size: contain; }
+        footer .contact .ewm-box > div span {
+          display: block;
+          font-size: 18px;
+          color: #37474f;
+          margin-top: 10px; }
+  footer .bottom {
+    margin: 65px 4.6875% 0;
+    padding: 30px 0;
+    border-top: 1px solid #d9d9d9; }
+    footer .bottom .bottom-top {
+      float: left;
+      font-size: 0; }
+      footer .bottom .bottom-top .logo {
+        display: inline-block;
+        background: url("../../img/footer/1920-logo.png") no-repeat;
+        width: 160px;
+        height: 55px;
+        border-right: 1px solid #d9d9d9;
+        margin-right: 40px;
+        padding-right: 40px; }
+      footer .bottom .bottom-top span {
+        float: right;
+        color: #bababa;
+        font-size: 14px;
+        display: inline-block;
+        margin-top: 18px; }
+    footer .bottom .bottom-bah {
+      float: right;
+      color: #bababa;
+      font-size: 14px;
+      margin-top: 18px; }
+
+/* 适配 */
+@media screen and (max-width: 640px) {
+  footer {
+    padding-top: 0; }
+    footer .contact {
+      margin: 0 1.45833rem; }
+      footer .contact .link {
+        float: none;
+        margin-top: 0; }
+        footer .contact .link a {
+          font-size: 0.83333rem;
+          border-right: 0;
+          border-bottom: 1px solid #e3e3e3;
+          margin-right: 0;
+          padding: 1.04167rem 0;
+          display: block;
+          position: relative; }
+          footer .contact .link a:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            background: url("../../img/960-right.png") no-repeat;
+            width: 0.29167rem;
+            height: 0.58333rem;
+            top: 1.33333rem;
+            background-size: contain; }
+      footer .contact .ewm-box {
+        float: none;
+        font-size: 0;
+        width: 11.875rem;
+        margin: 1.66667rem auto 0; }
+        footer .contact .ewm-box.platform-ewm-box {
+          width: 6.41667rem; }
+        footer .contact .ewm-box > div.wb-ewm-box {
+          margin-left: 2.08333rem; }
+        footer .contact .ewm-box > div > div {
+          width: 4.79167rem;
+          height: 4.79167rem; }
+          footer .contact .ewm-box > div > div.zqgzh-ewm-img {
+            width: 6.375rem;
+            height: 6.41667rem; }
+        footer .contact .ewm-box > div .gzh-ewm-img {
+          background: url("../../img/footer/960-ewm-xqgzh.jpg") center no-repeat;
+          background-size: contain; }
+        footer .contact .ewm-box > div .wb-ewm-img {
+          background: url("../../img/footer/960-ewm-xqwb.jpg") center no-repeat;
+          background-size: contain; }
+        footer .contact .ewm-box > div span {
+          font-size: 0.75rem;
+          margin-top: 0.41667rem; }
+    footer .bottom {
+      margin: 1.66667rem 0 0;
+      padding: 1.875rem 0;
+      border-top: 1px solid #d9d9d9; }
+      footer .bottom .bottom-top {
+        float: none;
+        font-size: 0; }
+        footer .bottom .bottom-top .logo {
+          display: block;
+          background: url("../../img/footer/1920-logo.png") no-repeat;
+          background-size: contain;
+          width: 5.5rem;
+          height: 1.875rem;
+          border-right: none;
+          margin-right: 0;
+          padding-right: 0;
+          margin-left: 1.66667rem; }
+        footer .bottom .bottom-top span {
+          padding-left: 1.66667rem;
+          float: none;
+          font-size: 0.625rem;
+          display: block;
+          margin-top: 1.04167rem; }
+      footer .bottom .bottom-bah {
+        padding-left: 1.66667rem;
+        display: block;
+        float: none;
+        font-size: 0.625rem;
+        margin-top: 0.75rem; } }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("//at.alicdn.com/t/font_536180_zkzfajluhctmx6r.eot");
+  src: url("//at.alicdn.com/t/font_536180_zkzfajluhctmx6r.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_536180_zkzfajluhctmx6r.woff") format("woff"), url("//at.alicdn.com/t/font_536180_zkzfajluhctmx6r.ttf") format("truetype"), url("//at.alicdn.com/t/font_536180_zkzfajluhctmx6r.svg#iconfont") format("svg"); }
+
+@font-face {
+  font-family: 'fzltth';
+  font-style: normal;
+  src: url("../fonts/fzlt-th.TTF") format("truetype"); }
+
+@font-face {
+  font-family: 'fzlttx';
+  font-style: normal;
+  src: url("../fonts/fzlt-tx.TTF") format("truetype"); }
+
+.iconfont {
+  font-family: "iconfont";
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal; }
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+  background-color: #f2f2f2;
+  font-family: "Microsoft YaHei UI", "Helvetica Neue", Ubuntu, "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif; }
+
+a, a:hover {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none; }
+  
+  a:hover {
+    opacity: 0.7; }
+
+/*# sourceMappingURL=public.css.map */
+
+/*# sourceMappingURL=public.css.map */

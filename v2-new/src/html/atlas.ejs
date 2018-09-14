@@ -1,0 +1,33 @@
+<%- include('../../libs/html/header', {
+title: '图集',
+description: '图集',
+keywords: '图集',
+plugin: [],
+private: ['../css/public.css', '../css/atlas.css']
+}) %>
+<%- include('./public/buy') %>
+<%- include('./public/nav', {
+current: 'atlas',
+label: '图集'
+}) %>
+<div class="atlas-warp">
+    <div class="contain clearfix">
+        <div class="xq-img"></div>
+        <div class="xq-img"></div>
+        <div class="xq-img"></div>
+        <div class="xq-img"></div>
+        <div class="xq-img"></div>
+        <div class="xq-img"></div>
+        <div class="xq-img"></div>
+        <div class="xq-img"></div>
+        <div class="xq-img"></div>
+    </div>
+</div>
+<%- include('./public/footer', {
+current: 'atlas'
+}) %>
+<%- include('../../libs/html/footer', {
+plugin: [],
+private: ['../js/public.js'],
+statistics: ''
+}) %>

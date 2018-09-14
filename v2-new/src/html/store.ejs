@@ -1,0 +1,80 @@
+<%- include('../../libs/html/header', {
+title: '零售体验店',
+description: '零售体验店',
+keywords: '零售体验店',
+plugin: [],
+private: ['../css/public.css', '../css/store.css']
+}) %>
+<%- include('./public/buy') %>
+<%- include('./public/nav', {
+current: 'store',
+label: '零售体验店'
+}) %>
+<div class="store-warp">
+    <div class="store-contain">
+        <div class="c-box clearfix">
+            <div class="img-bg"></div>
+            <div class="info">
+                <h2>AI机器时代-深圳机场店</h2>
+                <p>深圳宝安国际机场T3候机楼3C-04-09店铺、<br />安检内十字中心区</p>
+                <!--<p>电话：0755-86191899</p>-->
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="img-bg"></div>
+            <div class="info">
+                <h2>AI机器时代-卓悦汇店</h2>
+                <p>深圳市福田区上梅林地铁出口卓悦汇购物中心B2-B店铺</p>
+                <!--<p>电话：0755-88277860</p>-->
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="img-bg"></div>
+            <div class="info">
+                <h2>AI机器时代-厦门机场店</h2>
+                <p>厦门高崎国际机场T4航站楼T4-2-9店铺、T4-2-27店铺</p>
+                <!--<p>电话：0755-86286879</p>-->
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="img-bg"></div>
+            <div class="info">
+                <h2>创意银行茂业店</h2>
+                <p>深圳市南山区海德二道288号茂业百货9楼创意银行</p>
+                <p>电话：130 6811 6253</p>
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="img-bg"></div>
+            <div class="info">
+                <h2>创意银行九方店</h2>
+                <p>深圳市福田区华富路1018号中航华强北九方购物中心北区<br>4层L443号创意银行</p>
+                <p>电话：150 1291 1979</p>
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="img-bg"></div>
+            <div class="info">
+                <h2>创意银行君尚店</h2>
+                <p>深圳市南山区后海君尚3019五楼创意银行</p>
+                <p>电话：176 6535 4024</p>
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="img-bg"></div>
+            <div class="info">
+                <h2>创意银行深业上城店</h2>
+                <p>深圳市福田区皇岗路与笋岗路交界深业上城<br>中国国际消费电子展示交易中心5楼创意银行</p>
+                <p>电话：136 3276 0615</p>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('./public/footer', {
+current: 'store'
+}) %>
+<%- include('../../libs/html/footer', {
+plugin: [],
+private: ['../js/public.js'],
+statistics: ''
+}) %>

@@ -1,0 +1,160 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017-08-29 19:30
+ * Description：index
+ */
+@import "../../libs/scss/rem";
+
+@media screen and (min-width: 641px) {
+    body {
+        min-width: 1320px;
+    }
+}
+
+.atlas-warp {
+    .contain {
+        width: 1226px;
+        margin: 20px auto 0;
+
+        .xq-img {
+            width: 603px;
+            height: 405px;
+            margin-bottom: 20px;
+
+            &:nth-of-type(1),
+            &:nth-of-type(4),
+            &:nth-of-type(7) {
+                width: 1226px;
+                height: 824px;
+                clear: both;
+            }
+
+            &:nth-of-type(2),
+            &:nth-of-type(5),
+            &:nth-of-type(8) {
+                float: left;
+            }
+
+            &:nth-of-type(3),
+            &:nth-of-type(6),
+            &:nth-of-type(9) {
+                float: right;
+            }
+
+            &:nth-of-type(1) {
+                background: url("../img/atlas/1920-img1.jpg") no-repeat;
+            }
+
+            &:nth-of-type(2) {
+                background: url("../img/atlas/1920-img2.jpg") no-repeat;
+            }
+
+            &:nth-of-type(3) {
+                background: url("../img/atlas/1920-img3.jpg") no-repeat;
+            }
+
+            &:nth-of-type(4) {
+                background: url("../img/atlas/1920-img4.jpg") no-repeat;
+            }
+
+            &:nth-of-type(5) {
+                background: url("../img/atlas/1920-img5.jpg") no-repeat;
+            }
+
+            &:nth-of-type(6) {
+                background: url("../img/atlas/1920-img6.jpg") no-repeat;
+            }
+
+            &:nth-of-type(7) {
+                background: url("../img/atlas/1920-img7.jpg") no-repeat;
+            }
+
+            &:nth-of-type(8) {
+                background: url("../img/atlas/1920-img8.jpg") no-repeat;
+            }
+
+            &:nth-of-type(9) {
+                background: url("../img/atlas/1920-img9.jpg") no-repeat;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .atlas-warp {
+        .contain {
+            width: rem(621);
+            margin: rem(20) auto rem(20);
+
+            .xq-img {
+                width: rem(621);
+                height: rem(417);
+                margin-bottom: rem(10);
+
+                &:nth-of-type(1),
+                &:nth-of-type(4),
+                &:nth-of-type(7) {
+                    width: rem(621);
+                    height: rem(417);
+                }
+
+                &:nth-of-type(2),
+                &:nth-of-type(5),
+                &:nth-of-type(8) {
+                    float: none;
+                }
+
+                &:nth-of-type(3),
+                &:nth-of-type(6),
+                &:nth-of-type(9) {
+                    float: none;
+                }
+
+                &:nth-of-type(1) {
+                    background: url("../img/atlas/640-img1.jpg") no-repeat;
+                    background-size: contain;
+                }
+
+                &:nth-of-type(2) {
+                    background: url("../img/atlas/640-img2.jpg") no-repeat;
+                    background-size: contain;
+                }
+
+                &:nth-of-type(3) {
+                    background: url("../img/atlas/640-img3.jpg") no-repeat;
+                    background-size: contain;
+                }
+
+                &:nth-of-type(4) {
+                    background: url("../img/atlas/640-img4.jpg") no-repeat;
+                    background-size: contain;
+                }
+
+                &:nth-of-type(5) {
+                    background: url("../img/atlas/1920-img5.jpg") no-repeat;
+                    background-size: contain;
+                }
+
+                &:nth-of-type(6) {
+                    background: url("../img/atlas/640-img6.jpg") no-repeat;
+                    background-size: contain;
+                }
+
+                &:nth-of-type(7) {
+                    background: url("../img/atlas/640-img7.jpg") no-repeat;
+                    background-size: contain;
+                }
+
+                &:nth-of-type(8) {
+                    background: url("../img/atlas/640-img8.jpg") no-repeat;
+                    background-size: contain;
+                }
+
+                &:nth-of-type(9) {
+                    background: url("../img/atlas/1920-img9.jpg") no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}

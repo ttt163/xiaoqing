@@ -1,0 +1,230 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2018-01-16 10:54
+ * Description：footer
+ */
+@import '../../../libs/scss/rem';
+
+footer {
+    background: #fff;
+    padding-top: 90px;
+
+    .contact {
+        margin: 0 (90 / 1920) * 100%;
+
+        .link {
+            float: left;
+            font-size: 0;
+            margin-top: 50px;
+
+            a {
+                font-size: 18px;
+                color: #37474f;
+                border-right: 1px solid #37474f;
+                margin-right: 30px;
+                padding-right: 30px;
+                display: inline-block;
+
+                &:nth-last-of-type(1) {
+                    border-right: 0;
+                    margin-right: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+
+        .ewm-box {
+            float: right;
+            font-size: 0;
+
+            & > div {
+                display: inline-block;
+                text-align: center;
+
+                &.wb-ewm-box {
+                    margin-left: 50px;
+                }
+
+                & > div {
+                    width: 120px;
+                    height: 120px;
+                }
+
+                .gzh-ewm-img {
+                    background: url("../../img/footer/1920-ewm-xqgzh.jpg") center no-repeat;
+                }
+
+                .wb-ewm-img {
+                    background: url("../../img/footer/1920-ewm-xqwb.jpg") center no-repeat;
+                }
+
+                .zqgzh-ewm-img {
+                    background: url("../../img/footer/960-ewm-platform.jpg") center no-repeat;
+                    background-size: contain;
+                }
+
+                span {
+                    display: block;
+                    font-size: 18px;
+                    color: #37474f;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        margin: 65px (90 / 1920) * 100% 0;
+        padding: 30px 0;
+        border-top: 1px solid #d9d9d9;
+
+        .bottom-top {
+            float: left;
+            font-size: 0;
+
+            .logo {
+                display: inline-block;
+                background: url("../../img/footer/1920-logo.png") no-repeat;
+                width: 160px;
+                height: 55px;
+                border-right: 1px solid #d9d9d9;
+                margin-right: 40px;
+                padding-right: 40px;
+            }
+
+            span {
+                float: right;
+                color: #bababa;
+                font-size: 14px;
+                display: inline-block;
+                margin-top: 18px;
+            }
+        }
+
+        .bottom-bah {
+            float: right;
+            color: #bababa;
+            font-size: 14px;
+            margin-top: 18px;
+        }
+    }
+}
+
+/* 适配 */
+@media screen and (max-width: 640px) {
+    footer {
+        padding-top: 0;
+
+        .contact {
+            margin: 0 rem(35);
+
+            .link {
+                float: none;
+                margin-top: 0;
+
+                a {
+                    font-size: rem(20);
+                    border-right: 0;
+                    border-bottom: 1px solid #e3e3e3;
+                    margin-right: 0;
+                    padding: rem(25) 0;
+                    display: block;
+                    position: relative;
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        background: url("../../img/960-right.png") no-repeat;
+                        width: rem(7);
+                        height: rem(14);
+                        top: rem(32);
+                        background-size: contain;
+                    }
+                }
+            }
+
+            .ewm-box {
+                float: none;
+                font-size: 0;
+                width: rem(285);
+                margin: rem(40) auto 0;
+
+                &.platform-ewm-box {
+                    width: rem(154);
+                }
+
+                & > div {
+                    &.wb-ewm-box {
+                        margin-left: rem(50);
+                    }
+
+                    & > div {
+                        width: rem(115);
+                        height: rem(115);
+
+                        &.zqgzh-ewm-img {
+                            width: rem(153);
+                            height: rem(154);
+                        }
+                    }
+
+                    .gzh-ewm-img {
+                        background: url("../../img/footer/960-ewm-xqgzh.jpg") center no-repeat;
+                        background-size: contain;
+                    }
+
+                    .wb-ewm-img {
+                        background: url("../../img/footer/960-ewm-xqwb.jpg") center no-repeat;
+                        background-size: contain;
+                    }
+
+                    span {
+                        font-size: rem(18);
+                        margin-top: rem(10);
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            margin: rem(40) 0 0;
+            padding: rem(45) 0;
+            border-top: 1px solid #d9d9d9;
+
+            .bottom-top {
+                float: none;
+                font-size: 0;
+
+                .logo {
+                    display: block;
+                    background: url("../../img/footer/1920-logo.png") no-repeat;
+                    background-size: contain;
+                    width: rem(132);
+                    height: rem(45);
+                    border-right: none;
+                    margin-right: 0;
+                    padding-right: 0;
+                    margin-left: rem(40);
+                }
+
+                span {
+                    padding-left: rem(40);
+                    float: none;
+                    font-size: rem(15);
+                    display: block;
+                    margin-top: rem(25);
+                }
+            }
+
+            .bottom-bah {
+                padding-left: rem(40);
+                display: block;
+                float: none;
+                font-size: rem(15);
+                margin-top: rem(18);
+            }
+        }
+    }
+}

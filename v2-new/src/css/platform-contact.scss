@@ -1,0 +1,26 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017-08-29 19:30
+ * Description：index
+ */
+@import "../../libs/scss/rem";
+@import "./contact/main";
+@import "./public/platform-top";
+
+.page-contain {
+    background: #fff;
+
+    .platform-page-title {
+        font-size: 40px;
+        line-height: 90px;
+        font-family: 'fzlttx';
+        color: #545454;
+        margin-left: 105px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .page-contain {
+        display: none;
+    }
+}

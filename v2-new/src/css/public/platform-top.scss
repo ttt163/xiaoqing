@@ -1,0 +1,42 @@
+/**
+ * Author：tantingting
+ * Time：2018/7/19
+ * Description：Description
+ */
+
+@import "../../../libs/scss/rem";
+
+.platform-top {
+    background: url("../../img/platform/1920-top-bg.jpg") center repeat no-repeat;
+    background-size: 1920px 92px;
+    width: 100%;
+    height: 92px;
+    padding-top: 12px;
+    box-sizing: border-box;
+
+    .platform-logo {
+        display: block;
+        background: url("../../img/platform/1920-top-logo.png") no-repeat;
+        width: 462px;
+        height: 67px;
+        margin-left: 105px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .platform-top {
+        background: url("../../img/platform/640-top-bg.jpg") left center repeat no-repeat;
+        background-size: contain;
+        width: rem(640);
+        height: rem(95);
+        padding-top: rem((95 - 53) / 2);
+
+        .platform-logo {
+            background: url("../../img/platform/640-top-logo.png") no-repeat;
+            background-size: contain;
+            width: rem(362);
+            height: rem(53);
+            margin-left: rem(26);
+        }
+    }
+}

@@ -1,0 +1,29 @@
+<%- include('../../libs/html/header', {
+title: '音质超赞的小青AI音箱-蓝港科技',
+description: '音质超赞的小青AI音箱-蓝港科技',
+keywords: '音质超赞的小青AI音箱-蓝港科技',
+plugin: [],
+private: ['../css/public.css', '../css/index.css']
+}) %>
+<%- include('./public/buy') %>
+<%- include('./public/nav', {
+current: 'index',
+label: '首页'
+}) %>
+<div class="index-warp">
+    <%- include('./index/page1') %>
+    <%- include('./index/page2') %>
+    <%- include('./index/page3') %>
+    <%- include('./index/page4') %>
+    <%- include('./index/page5') %>
+    <%- include('./index/page6') %>
+    <%- include('./index/page7') %>
+</div>
+<%- include('./public/footer', {
+current: 'index'
+}) %>
+<%- include('../../libs/html/footer', {
+plugin: [],
+private: ['../js/public.js', '../js/index.js'],
+statistics: ''
+}) %>

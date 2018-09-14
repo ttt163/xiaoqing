@@ -1,0 +1,302 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2018-01-16 10:54
+ * Description：nav
+ */
+@import "../../../libs/scss/rem";
+
+.xq-top {
+    padding: 0 (90 / 1920) * 100%;
+    background-color: #fff;
+    color: #545454;
+
+    .top {
+        .t-left {
+            width: 106px;
+            height: 113px;
+            background: url("../../img/xq-logo-1920.png") no-repeat;
+            float: left;
+        }
+
+        .t-right {
+            border-bottom: 1px solid #d9d9d9;
+            margin-left: 140px;
+            font-size: 0;
+            font-family: fzlttx;
+
+            a {
+                font-size: 24px;
+                color: #545454;
+                display: inline-block;
+                margin-right: 60px;
+                height: 112px;
+                line-height: 112px;
+
+                &.active {
+                    color: #c20f2f;
+                    position: relative;
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        bottom: -1px;
+                        width: 100%;
+                        height: 2px;
+                        background-color: #c20f2f;
+                    }
+                }
+            }
+        }
+
+        .xq-nav-btn {
+            display: none;
+        }
+    }
+
+    .nav-box {
+        float: right;
+
+        .page-title {
+            display: none;
+        }
+
+        &.left {
+            float: left;
+
+            .page-title {
+                display: block;
+                font-size: 40px;
+                line-height: 90px;
+                font-family: 'fzlttx';
+            }
+
+            nav {
+                display: none;
+            }
+
+            .buy-now {
+                display: none;
+            }
+        }
+
+        nav {
+            float: left;
+            font-family: fzlttx;
+
+            ul {
+                font-size: 0;
+                padding: 34px 0;
+
+                li {
+                    display: inline-block;
+                    border-right: 1px solid #d9d9d9;
+                    margin-right: 20px;
+                    padding-right: 20px;
+
+                    &.active {
+                        a {
+                            color: #c20f2f;
+                        }
+                    }
+
+                    a {
+                        color: #545454;
+                        font-size: 20px;
+                    }
+
+                    &.xq-WeChat {
+                        border-right: 0;
+                        margin-right: 10px;
+                        position: relative;
+
+                        .gzh-ewm {
+                            display: none;
+                            position: absolute;
+                            z-index: 99;
+                            top: 25px;
+                            left: -46px;
+                            color: #fff;
+
+                            .sj {
+                                border: 10px solid transparent;
+                                border-bottom-color: #c20f2f;
+                                width: 0;
+                                margin-left: 90px;
+                            }
+
+                            .gzh-ewm-box {
+                                background-color: #c20f2f;
+                                padding: 18px 28px;
+                                border-radius: 5px;
+                                text-align: center;
+
+                                span {
+                                    display: block;
+                                    font-size: 18px;
+                                    white-space: nowrap;
+                                    margin-top: 8px;
+                                }
+                            }
+                        }
+                    }
+
+                    &.xq-platform {
+                        display: none;
+                    }
+                }
+            }
+
+            .close {
+                display: none;
+            }
+        }
+
+        .buy-now {
+            float: right;
+            font-size: 20px;
+            color: #fff;
+            padding: 14px 28px;
+            background-color: #c20f2f;
+            display: block;
+            border-radius: 5px;
+            margin-top: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .xq-top {
+        padding: 0;
+        position: relative;
+
+        .top {
+            border-bottom: 1px solid #d9d9d9;
+
+            .t-left {
+                width: rem(114);
+                height: rem(104);
+                background: url("../../img/xq-logo-640.png") no-repeat;
+                background-size: contain;
+            }
+
+            .t-right {
+                display: none;
+            }
+
+            .xq-nav-btn {
+                cursor: pointer;
+                display: block;
+                position: absolute;
+                right: rem(25);
+                top: rem(48);
+                height: rem(6 * 3 + 18 * 2);
+
+                .line,
+                .line:after,
+                .line:before {
+                    display: block;
+                    background: #a5a5a5;
+                    border-radius: rem(20);
+                    height: rem(6);
+                    width: rem(52);
+                    transition: background 1s ease 0s;
+                }
+
+                .line:after,
+                .line:before {
+                    content: '';
+                }
+
+                .line:after {
+                    transform: translateY(rem(18));
+                }
+
+                .line:before {
+                    transform: translateY(rem(-18));
+                }
+            }
+        }
+
+        .nav-box {
+            &.left {
+                .page-title {
+                    display: none;
+                }
+
+                .buy-now {
+                    display: block;
+                }
+            }
+
+            nav {
+                &.mask {
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.9);
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 999;
+                    //overflow: auto;
+                    display: none;
+                }
+
+                ul {
+                    margin-top: rem(150);
+                    padding: 0 rem(40);
+
+                    li {
+                        display: block;
+                        border-right: 0;
+                        margin-right: 0;
+                        padding-right: 0;
+                        border-bottom: 1px solid #d9d9d9;
+                        margin-bottom: rem(45);
+
+                        &.active {
+                            a {
+                                color: #c20f2f;
+                            }
+                        }
+
+                        a {
+                            color: #d9d9d9;
+                            font-size: rem(30);
+                            display: block;
+                            padding-bottom: rem(38);
+                        }
+
+                        &.xq-WeChat {
+                            display: none;
+                        }
+
+                        &.xq-platform {
+                            display: block;
+                        }
+                    }
+                }
+
+                .close {
+                    display: block;
+                    position: absolute;
+                    top: rem(30);
+                    right: rem(30);
+
+                    img {
+                        width: rem(38);
+                    }
+                }
+            }
+
+            .buy-now {
+                position: absolute;
+                top: 0;
+                right: rem(108);
+                padding: rem(15) rem(30);
+                font-size: rem(22);
+                border-radius: rem(65);
+            }
+        }
+    }
+}

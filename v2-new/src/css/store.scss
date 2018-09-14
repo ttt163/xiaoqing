@@ -1,0 +1,187 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017-08-29 19:30
+ * Description：index
+ */
+@import "../../libs/scss/rem";
+
+@media screen and (min-width: 641px) {
+    body {
+        min-width: 1320px;
+    }
+}
+
+.store-warp {
+    .store-contain {
+        width: 1227px;
+        margin: 20px auto 0;
+        color: #545454;
+        font-size: 20px;
+
+        .c-box {
+            background-color: #fff;
+            margin-bottom: 20px;
+
+            .img-bg {
+                float: right;
+                width: 528px;
+                height: 460px;
+            }
+
+            &:nth-of-type(1) {
+                .img-bg {
+                    background: url("../img/store/1920-img-jqsd-szjc.jpg") no-repeat;
+                }
+            }
+
+            &:nth-of-type(2) {
+                .img-bg {
+                    background: url("../img/store/1920-img-jqsd-zhuoyue.jpg") no-repeat;
+                }
+            }
+
+            &:nth-of-type(3) {
+                .img-bg {
+                    background: url("../img/store/1920-img-jqsd-xiamen.jpg") no-repeat;
+                }
+            }
+
+            &:nth-of-type(4) {
+                .img-bg {
+                    background: url("../img/store/1920-img-4.jpg") no-repeat;
+                }
+            }
+
+            &:nth-of-type(5) {
+                .img-bg {
+                    background: url("../img/store/1920-img-5.jpg") no-repeat;
+                }
+            }
+
+            &:nth-of-type(6) {
+                .img-bg {
+                    background: url("../img/store/1920-img-6.jpg") no-repeat;
+                }
+            }
+
+            &:nth-of-type(7) {
+                .img-bg {
+                    background: url("../img/store/1920-img-7.jpg") no-repeat;
+                }
+            }
+
+            .info {
+                float: left;
+                margin-left: 62px;
+                margin-top: 110px;
+
+                h2 {
+                    font-size: 40px;
+                    margin-bottom: 65px;
+                    font-family: 'fzlttx';
+                }
+
+                p {
+                    margin-bottom: 55px;
+                    line-height: 35px;
+
+                    &:nth-last-of-type(1) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .store-warp {
+        .store-contain {
+            width: rem(621);
+            margin: rem(18) auto 0;
+            font-size: rem(20);
+
+            .c-box {
+                margin-bottom: rem(15);
+
+                .img-bg {
+                    float: none;
+                    width: rem(621);
+                    height: rem(265);
+                }
+
+                &:nth-of-type(1) {
+                    .img-bg {
+                        background: url("../img/store/960-img-jqsd-szjc.jpg") no-repeat;
+                        background-size: contain;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    .img-bg {
+                        background: url("../img/store/960-img-jqsd-zhuoyue.jpg") no-repeat;
+                        background-size: contain;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    .img-bg {
+                        background: url("../img/store/960-img-jqsd-xiamen.jpg") no-repeat;
+                        background-size: contain;
+                    }
+                }
+
+                &:nth-of-type(4) {
+                    .img-bg {
+                        background: url("../img/store/960-img-4.jpg") no-repeat;
+                        background-size: contain;
+                    }
+                }
+
+                &:nth-of-type(5) {
+                    .img-bg {
+                        background: url("../img/store/960-img-5.jpg") no-repeat;
+                        background-size: contain;
+                    }
+                }
+
+                &:nth-of-type(6) {
+                    .img-bg {
+                        background: url("../img/store/960-img-6.jpg") no-repeat;
+                        background-size: contain;
+                    }
+                }
+
+                &:nth-of-type(7) {
+                    .img-bg {
+                        background: url("../img/store/960-img-7.jpg") no-repeat;
+                        background-size: contain;
+                    }
+                }
+
+                .info {
+                    float: none;
+                    //margin-left: rem(56);
+                    //margin-top: rem(68);
+                    //margin-bottom: rem(68);
+                    margin: 0;
+                    padding: rem(68) 0 rem(68) rem(56);
+
+                    h2 {
+                        font-size: rem(31);
+                        margin-bottom: rem(42);
+                    }
+
+                    p {
+                        margin-bottom: rem(50);
+                        line-height: rem(38);
+
+                        &:nth-last-of-type(1) {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

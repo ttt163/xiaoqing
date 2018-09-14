@@ -1,0 +1,21 @@
+<%- include('../../libs/html/header', {
+title: '联系我们',
+description: '联系我们',
+keywords: '联系我们',
+plugin: [],
+private: ['../css/public.css', '../css/contact.css']
+}) %>
+<%- include('./public/buy') %>
+<%- include('./public/nav', {
+current: 'footer',
+label: '关于我们'
+}) %>
+<%- include('./contact/main') %>
+<%- include('./public/footer', {
+current: 'footer'
+}) %>
+<%- include('../../libs/html/footer', {
+plugin: [],
+private: ['../js/public.js'],
+statistics: ''
+}) %>
